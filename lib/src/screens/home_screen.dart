@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.grey.shade300,
+       /// backgroundColor: thehe ? Colors.grey.shade300 : Colors.grey.shade300,
         body: SingleChildScrollView(
           child: Column(
             children: [
