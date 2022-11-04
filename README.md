@@ -1,12 +1,26 @@
-# hng_task2
+## HNG Mobile-task2
 
-A new Flutter project.
+Task Solution For HNG Stage 2
 
-## Getting Started
+#### My CV app: 
 
-This project is a starting point for a Flutter application.
+Features
+> A brief info about me.
+> 
+> A brief description of what I offer you,
+> 
+> My tech stacks 
+>
+> My social media links which are clickable
+> 
+> Dark mode which automatically adapts to system theme.
 
-A few resources to get you started if this is your first Flutter project:
+Design patterns
+
+
+# Getting Started
+
+resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
