@@ -44,7 +44,7 @@ Features To Further Implement
 > Handle localization 
 > 
 
-#### App APK
+#### App APK Link
 
 - [My resume app ](https://drive.google.com/file/d/1rijHa96TzkP9nVJpWvY6DINNkFrVKe3g/view?usp=drivesdk)
 
@@ -52,5 +52,9 @@ Challenges Faced
 
 > Deployment of the app to - [Appetizer.io ](https://appetize.io/) : Solved by deploying the debug version of the app
 
+
+#### App Appetize link
+
+- [Appetize link ](https://drive.google.com/file/d/1rijHa96TzkP9nVJpWvY6DINNkFrVKe3g/view?usp=drivesdk)
 
 
