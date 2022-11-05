@@ -2,9 +2,9 @@
 
 Task Solution For HNG Stage 2
 
-#### My CV app: 
+#### My CV app 
 
-Features
+App Features
 
 > A brief info about me.
 > 
@@ -18,14 +18,19 @@ Features
 
 App Design
 
+> A single page resume application design worked on by I and Efeosa Asesojia
 
-Code Structure
+- [Figma Design](https://www.figma.com/file/A7asToE7C7y4FYgvQnXBIb/Dev-page?node-id=0%3A1)
+
+
+
+App Code Structure
 
 > MVVM design pattern is used in this app 
 and with seperation of concerns 
 making the app very maintainable and scalable.
 
-Library Dependence
+App Library Dependence
 
 > url_launcher
 
@@ -48,13 +53,4 @@ Challenges Faced
 > Deployment of the app to - [Appetizer.io ](https://appetize.io/) : Solved by deploying the debug version of the app
 
 
-# Getting Started
 
-resources to get you started if this is your first Flutter project:
-
-
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
