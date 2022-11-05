@@ -16,6 +16,9 @@ Features
 > 
 > Dark mode which automatically adapts to system theme.
 
+App Design
+
+
 Code Structure
 
 > MVVM design pattern is used in this app 
@@ -42,7 +45,9 @@ Features To Further Implement
 
 Challenges Faced
 
-> Deployment of the app to - [Appetizer.io ](https://pub.dev/packages/url_launcher)
+> Deployment of the app to - [Appetizer.io ](https://appetize.io/) : Solved by deploying the debug version of the app
+
+
 # Getting Started
 
 resources to get you started if this is your first Flutter project:
