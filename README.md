@@ -24,12 +24,25 @@ making the app very maintainable and scalable.
 
 Library Dependence
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+> url_launcher
 
+- [Flutter plugin for launching a URL. ](https://pub.dev/packages/url_launcher)
 
+Features To Further Implement
+> Properly follow MVVM design pattern
+> 
+> Properly refactor the codebase. Singularity of function (seperation of concerns)
+> 
+> Handle localization 
+> 
 
+#### App APK
 
+- [My resume app ](https://drive.google.com/file/d/1rijHa96TzkP9nVJpWvY6DINNkFrVKe3g/view?usp=drivesdk)
 
+Challenges Faced
+
+> Deployment of the app to - [Appetizer.io ](https://pub.dev/packages/url_launcher)
 # Getting Started
 
 resources to get you started if this is your first Flutter project:
