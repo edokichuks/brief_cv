@@ -59,8 +59,6 @@ Challenges Faced
 
 ##### Short video clip
 
-
-
 https://drive.google.com/file/d/1VAoSFdSp5axXtX_sraU9JaYP4q3DBM-P/view?usp=drivesdk
 
 
