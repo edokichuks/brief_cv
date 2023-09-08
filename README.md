@@ -55,13 +55,13 @@ Challenges Faced
 
 #### App Appetize link
 
-- [Appetize link ](https://appetize.io/app/bbcljoefku3xxa63i6dkgb2xku?device=pixel4&osVersion=11.0&scale=75)
+- [Appetize link ](https://appetize.io/app/cx2suqir2a4mxjexq4y6gv7jg4?device=pixel4&osVersion=11.0&scale=75)
 
 ##### Short video clip
 
 
 
-https://user-images.githubusercontent.com/92238247/200106480-d313649a-8261-4082-8a39-4e1ef1750881.mp4
+https://drive.google.com/file/d/1VAoSFdSp5axXtX_sraU9JaYP4q3DBM-P/view?usp=drivesdk
 
 
 
