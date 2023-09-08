@@ -14,4 +14,8 @@ class AppString {
   static const String twitter =
       'https://twitter.com/chukscoDev?t=qtWAHpdbxY3TW5Y9b3Q_BA&s=09';
   static const String aboutMeS = 'About Me';
+  static const String githubLink = 'https://github.com/edokichuks';
+  static const String openGit = 'Open GitHub';
+  
+
 }

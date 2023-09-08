@@ -7,8 +7,7 @@
             <data android:scheme="https" />
         </intent>
     </queries>
-    <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.INTERNET" />  
    <application
         android:label="hng_task2"
         android:name="${applicationName}"
