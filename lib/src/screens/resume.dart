@@ -1,14 +1,17 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hng_task2/src/constants/app_color.dart';
 import 'package:hng_task2/src/constants/app_string.dart';
+import 'package:hng_task2/src/model/cv_model.dart';
+import 'package:hng_task2/src/screens/edit_resume_screen.dart';
 import 'package:hng_task2/src/widgets/app_button.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../widgets/developer.dart';
 
 class AboutDevelopers extends StatefulWidget {
-  const AboutDevelopers({Key? key}) : super(key: key);
+  const AboutDevelopers({Key? key, required this.cvData}) : super(key: key);
 
+  final CVData cvData;
   @override
   State<AboutDevelopers> createState() => _AboutDevelopersState();
 }
@@ -34,12 +37,12 @@ class _AboutDevelopersState extends State<AboutDevelopers> {
                   width: width,
                   height: height,
                   imagePath: 'assets/Pic Chuks.jpeg',
-                  nickName: 'chuksDev💙',
-                  fullName: 'Edoki Chukwuyem',
+                  nickName: widget.cvData.slackUsername,
+                  fullName: widget.cvData.name,
+                  // fullName: 'Edoki Chukwuyem',
                   title: 'Mobile App Developer',
                   location: 'Asaba, Nigeria',
-                  aboutText:
-                      'More than 2 year experience in fundamentals of programming in Java, C, Scripting language, design concepts, version control systems API consumption and lots more',
+                  aboutText: widget.cvData.bio,
                   whatICanDO:
                       'I build mobile applications which are easily to maintain and scalable with accurate compliance to design and following good practices',
                   emailLink: 'https://wa.me/qr/KDHE2Y223QWCC1',
@@ -57,33 +60,42 @@ class _AboutDevelopersState extends State<AboutDevelopers> {
                   skillAndTools3: 'assets/Java.png',
                   skillAndTools4: 'assets/git logo.jpg',
                   skillAndTools5: 'assets/figma.png',
+                  githubHandle: widget.cvData.githubHandle,
                 ),
                 SizedBox(
                   height: height / 12,
                 ),
                 AppButton(
-                  text: AppString.openGit,
-                  isEnabled: true,
-                  isLoading: isLoading,
-                  onTap: () async {
-                    setState(() {
-                      isLoading = true;
-                    });
-                    await Future.delayed(const Duration(seconds: 2), () {});
-                    final webParse = Uri.parse(AppString.githubLink);
-                    if (await canLaunchUrl(webParse)) {
-                      if (!await launchUrl(
-                        webParse,
-                        mode: LaunchMode.externalNonBrowserApplication,
-                      )) {}
-                    } else {
-                      throw "Could not launch $webParse";
+                    text: 'Edit CV',
+                    isEnabled: true,
+                    isLoading: isLoading,
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          CupertinoModalPopupRoute(
+                            builder: (context) =>
+                                EditResumeScreen(cvData: widget.cvData),
+                          ));
                     }
-                    setState(() {
-                      isLoading = false;
-                    });
-                  },
-                )
+                    // async {
+                    //   setState(() {
+                    //     isLoading = true;
+                    //   });
+                    //   await Future.delayed(const Duration(seconds: 2), () {});
+                    //   final webParse = Uri.parse(AppString.githubLink);
+                    //   if (await canLaunchUrl(webParse)) {
+                    //     if (!await launchUrl(
+                    //       webParse,
+                    //       mode: LaunchMode.externalNonBrowserApplication,
+                    //     )) {}
+                    //   } else {
+                    //     throw "Could not launch $webParse";
+                    //   }
+                    //   setState(() {
+                    //     isLoading = false;
+                    //   });
+                    // },
+                    )
               ],
             ),
           ),

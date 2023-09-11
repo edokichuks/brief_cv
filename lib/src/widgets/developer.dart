@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hng_task2/src/constants/app_color.dart';
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class Developer extends StatelessWidget {
   final String imagePath;
@@ -23,6 +23,7 @@ class Developer extends StatelessWidget {
   final String skillAndTools3;
   final String skillAndTools4;
   final String skillAndTools5;
+  final String githubHandle;
 
   const Developer({
     Key? key,
@@ -48,6 +49,7 @@ class Developer extends StatelessWidget {
     required this.linkedinLink,
     required this.emailLink,
     required this.aboutText,
+    required this.githubHandle,
   }) : super(key: key);
 
   final double width;
@@ -162,6 +164,40 @@ class Developer extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Row(
+                children: [
+                  Text(
+                    'Github Handle',
+                    style: TextStyle(
+                      fontFamily: 'ChelaOne-Regular',
+                      letterSpacing: 0.5,
+                      color: AppColor.mainAppColor,
+                      fontSize: 20,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    githubHandle,
+                    style: const TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontSize: 15,
+                      fontFamily: 'ChelaOne-Regular',
+                      letterSpacing: 1.5,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
             child: Align(
@@ -188,35 +224,35 @@ class Developer extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'What I Can Do',
-                style: TextStyle(
-                  fontFamily: 'ChelaOne-Regular',
-                  letterSpacing: 0.5,
-                  color: AppColor.mainAppColor,
-                  fontSize: 20,
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Text(
-              whatICanDO,
-              style: const TextStyle(
-                fontSize: 15,
-                fontFamily: 'ChelaOne-Regular',
-                letterSpacing: 1.5,
-              ),
-            ),
-          ),
+          // const SizedBox(
+          //   height: 10,
+          // ),
+          // const Padding(
+          //   padding: EdgeInsets.symmetric(horizontal: 20.0),
+          //   child: Align(
+          //     alignment: Alignment.centerLeft,
+          //     child: Text(
+          //       'What I Can Do',
+          //       style: TextStyle(
+          //         fontFamily: 'ChelaOne-Regular',
+          //         letterSpacing: 0.5,
+          //         color: AppColor.mainAppColor,
+          //         fontSize: 20,
+          //       ),
+          //     ),
+          //   ),
+          // ),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 20),
+          //   child: Text(
+          //     whatICanDO,
+          //     style: const TextStyle(
+          //       fontSize: 15,
+          //       fontFamily: 'ChelaOne-Regular',
+          //       letterSpacing: 1.5,
+          //     ),
+          //   ),
+          // ),
           const SizedBox(
             height: 10,
           ),
@@ -317,15 +353,15 @@ class Developer extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () async {
-                    final webParse = Uri.parse(linkedinLink);
-                    if (await canLaunchUrl(webParse)) {
-                      if (!await launchUrl(
-                        webParse,
-                        mode: LaunchMode.externalNonBrowserApplication,
-                      )) {}
-                    } else {
-                      throw "Could not launch $webParse";
-                    }
+                    // final webParse = Uri.parse(linkedinLink);
+                    // if (await canLaunchUrl(webParse)) {
+                    //   if (!await launchUrl(
+                    //     webParse,
+                    //     mode: LaunchMode.externalNonBrowserApplication,
+                    //   )) {}
+                    // } else {
+                    //   throw "Could not launch $webParse";
+                    // }
                   },
                   child: const CircleAvatar(
                     backgroundImage: AssetImage('assets/linkedin logo.png'),
@@ -336,15 +372,15 @@ class Developer extends StatelessWidget {
                 const SizedBox(width: 5),
                 InkWell(
                   onTap: () async {
-                    final webParse = Uri.parse(whatappLink);
-                    if (await canLaunchUrl(webParse)) {
-                      if (!await launchUrl(
-                        webParse,
-                        mode: LaunchMode.externalNonBrowserApplication,
-                      )) {}
-                    } else {
-                      throw "Could not launch $webParse";
-                    }
+                    // final webParse = Uri.parse(whatappLink);
+                    // if (await canLaunchUrl(webParse)) {
+                    //   if (!await launchUrl(
+                    //     webParse,
+                    //     mode: LaunchMode.externalNonBrowserApplication,
+                    //   )) {}
+                    // } else {
+                    //   throw "Could not launch $webParse";
+                    // }
                   },
                   child: const CircleAvatar(
                     backgroundImage: AssetImage('assets/whatsapp-logo.png'),
@@ -355,15 +391,15 @@ class Developer extends StatelessWidget {
                 const SizedBox(width: 5),
                 InkWell(
                   onTap: () async {
-                    final webParse = Uri.parse(twitterLink);
-                    if (await canLaunchUrl(webParse)) {
-                      if (!await launchUrl(
-                        webParse,
-                        mode: LaunchMode.externalNonBrowserApplication,
-                      )) {}
-                    } else {
-                      throw "Could not launch $webParse";
-                    }
+                    // final webParse = Uri.parse(twitterLink);
+                    // if (await canLaunchUrl(webParse)) {
+                    //   if (!await launchUrl(
+                    //     webParse,
+                    //     mode: LaunchMode.externalNonBrowserApplication,
+                    //   )) {}
+                    // } else {
+                    //   throw "Could not launch $webParse";
+                    // }
                   },
                   child: const CircleAvatar(
                     backgroundImage: AssetImage('assets/twitter.png'),
@@ -374,15 +410,15 @@ class Developer extends StatelessWidget {
                 const SizedBox(width: 5),
                 InkWell(
                   onTap: () async {
-                    final webParse = Uri.parse(facebookLink);
-                    if (await canLaunchUrl(webParse)) {
-                      if (!await launchUrl(
-                        webParse,
-                        mode: LaunchMode.externalNonBrowserApplication,
-                      )) {}
-                    } else {
-                      throw "Could not launch $webParse";
-                    }
+                    // final webParse = Uri.parse(facebookLink);
+                    // if (await canLaunchUrl(webParse)) {
+                    //   if (!await launchUrl(
+                    //     webParse,
+                    //     mode: LaunchMode.externalNonBrowserApplication,
+                    //   )) {}
+                    // } else {
+                    //   throw "Could not launch $webParse";
+                    // }
                   },
                   child: const CircleAvatar(
                     backgroundImage: AssetImage('assets/fblogo.png'),
