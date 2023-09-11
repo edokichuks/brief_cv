@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hng_task2/src/model/cv_model.dart';
 
+import 'src/constants/app_color.dart';
 import 'src/screens/home_screen.dart';
 import 'src/screens/resume.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'HNG Task 2',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light().copyWith(primaryColor: Colors.brown),
+      theme: ThemeData.light(useMaterial3: true).copyWith(primaryColor: AppColor.mainAppColor,
+      ),
       darkTheme: ThemeData.dark(),
       home: AboutDevelopers(
           cvData: CVData(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hng_task2/src/constants/app_color.dart';
 
 class AppTextFiled extends StatefulWidget {
   final double? width;
@@ -138,7 +139,7 @@ class _AppTextFiledState extends State<AppTextFiled> {
               filled: true,
               enabled: false,
               errorStyle: const TextStyle(fontSize: 0, height: -30),
-              fillColor: widget.backgroundColor ?? Colors.brown.shade500,
+              fillColor: widget.backgroundColor ?? AppColor.mainAppColor,
               hintText: widget.hintText,
               hintStyle: TextStyle(
                 color: Colors.black.withOpacity(0.5),

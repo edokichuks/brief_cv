@@ -217,6 +217,7 @@ class Developer extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               aboutText,
+              textAlign: TextAlign.left,
               style: const TextStyle(
                 fontSize: 15,
                 fontFamily: 'ChelaOne-Regular',

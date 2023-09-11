@@ -76,26 +76,7 @@ class _AboutDevelopersState extends State<AboutDevelopers> {
                             builder: (context) =>
                                 EditResumeScreen(cvData: widget.cvData),
                           ));
-                    }
-                    // async {
-                    //   setState(() {
-                    //     isLoading = true;
-                    //   });
-                    //   await Future.delayed(const Duration(seconds: 2), () {});
-                    //   final webParse = Uri.parse(AppString.githubLink);
-                    //   if (await canLaunchUrl(webParse)) {
-                    //     if (!await launchUrl(
-                    //       webParse,
-                    //       mode: LaunchMode.externalNonBrowserApplication,
-                    //     )) {}
-                    //   } else {
-                    //     throw "Could not launch $webParse";
-                    //   }
-                    //   setState(() {
-                    //     isLoading = false;
-                    //   });
-                    // },
-                    )
+                    })
               ],
             ),
           ),
