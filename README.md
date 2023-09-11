@@ -8,11 +8,11 @@ App Features
 
 > A brief info about me.
 > 
-> A brief description of what I offer you,
+> My slack name, github handle
 > 
 > My tech stacks 
 >
-> My social media links which are clickable
+> Editable CV feature
 > 
 > Dark mode which automatically adapts to system theme.
 
@@ -30,38 +30,16 @@ App Code Structure
 and with seperation of concerns 
 making the app very maintainable and scalable.
 
-App Library Dependence
-
-> url_launcher
-
-- [Flutter plugin for launching a URL. ](https://pub.dev/packages/url_launcher)
-
-Features To Further Implement
-> Properly follow MVVM design pattern
-> 
-> Properly refactor the codebase. Singularity of function (seperation of concerns)
-> 
-> Handle localization 
-> 
-
-#### App APK Link
-
-- [My resume app ](https://drive.google.com/file/d/1rijHa96TzkP9nVJpWvY6DINNkFrVKe3g/view?usp=drivesdk)
-
-Challenges Faced
-
-> Deployment of the app to - [Appetizer.io ](https://appetize.io/) : Solved by deploying the debug version of the app
-
 
 #### App Appetize link
 
-- [Appetize link ](https://appetize.io/app/bbcljoefku3xxa63i6dkgb2xku?device=pixel4&osVersion=11.0&scale=75)
+- [Appetize link ](https://appetize.io/app/oeyozgib2wjcrbkhpsblswlscm?device=pixel4&osVersion=11.0&scale=75)
 
 ##### Short video clip
 
+ 
 
-
-https://user-images.githubusercontent.com/92238247/200106480-d313649a-8261-4082-8a39-4e1ef1750881.mp4
+https://github.com/edokichuks/brief_cv/assets/92238247/1cc85272-4e73-4299-8b17-7820be8446a6
 
 
 
